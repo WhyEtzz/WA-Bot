@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://media1.giphy.com/media/28AEi3TIvtSP6/giphy.gif" alt="GIF" width="128" height="128"/>
+<img src="https://media2.giphy.com/media/hT9HZel7StXYs8IILB/giphy.gif" alt="GIF" width="128" height="128"/>
 </p>
 <p align="center">
 <a href="#"><img title="ETZZ BOT" src="https://img.shields.io/badge/ETZZ BOT-green?colorA=%23ff0000&colorB=%23017e40&style=for-the-badge"></a>
