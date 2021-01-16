@@ -45,7 +45,7 @@ Apikey Location
 - [SETTING](https://github.com/WhyEtzz/WA-Bot/blob/main/lib/database/setting.json)
 
 ## Donate
-- [Traktee](https://trakteer.id/BotEtzz)
+- [Trakteer](https://trakteer.id/BotEtzz)
 
 ## Getting Started
 
