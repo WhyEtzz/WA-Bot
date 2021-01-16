@@ -13,7 +13,7 @@ BAGI YANG NANYA2 MASANG APIKEY DIMANA??
 BACA README NYA, PERCUMA W BUAT README
 
 INGAT JANGAN JUAL SCRIPT Etzz KEPADA ORANG LAIN!
-INGIN PREMIUM? CHAT TOBZ!
+INGIN PREMIUM? CHAT Ichi!
 
 Etzz BOT V3
 */
@@ -290,7 +290,7 @@ module.exports = tobz = async (tobz, message) => {
             if (obj === true){
                 return false
             } else {
-                return tobz.reply(from, `Kamu belum cukup umur untuk menggunakan Etzz, min 16 tahun\n\nKamu bisa mendaftar ulang dengan cara donasi terlebih dahulu, bales ${prefix}donasi\nHubungi Owner : wa.me/6281311850715`, id) //if user is not registered
+                return tobz.reply(from, `Kamu belum cukup umur untuk menggunakan Etzz, min 16 tahun\n\nKamu bisa mendaftar ulang dengan cara donasi terlebih dahulu, bales ${prefix}donasi\nHubungi Owner : wa.me/6285755495437`, id) //if user is not registered
             }
         }
 
@@ -1212,7 +1212,7 @@ ${desc}`)
             break
         case prefix+'owner':
         case prefix+'creator':
-            tobz.sendContact(chatId, `6281311850715@c.us`)
+            tobz.sendContact(chatId, `6285755495437@c.us`)
             tobz.reply(from, 'Itu nomor Pacar ku, eh maksudnya Owner ku', id)
             break
         case prefix+'resetsticker':
@@ -2447,45 +2447,45 @@ ${desc}`)
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6285755495437', id)
           break
         case prefix+'getnhentai': // DOWNLOADER NHENTAI PDF FROM #NHENTAI
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6285755495437', id)
           break
         case prefix+'xvideos': // SEARCH VIDEO FROM XVIDEOS
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6285755495437', id)
             break
         case prefix+'getxvideos': // DOWNLOADER VIDEO FROM #VIDEO
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6285755495437', id)
             break
         case prefix+'video': // SEARCH VIDEO FROM YOUTUBE
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6285755495437', id)
             break
         case prefix+'getvideo': // DOWNLOADER VIDEO FROM #VIDEO
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6285755495437', id)
             break
         case prefix+'music': // SEARCH MUSIC FROM YOUTUBE
             if(isReg(obj)) return
             if(cekumur(cekage)) return
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6285755495437', id)
             break
         case prefix+'getmusic': // DOWNLOADER MUSIC FROM #MUSIC
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
-            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6281311850715', id)
+            tobz.reply(from, 'PREMIUM COMMAND, HUBUNGI : wa.me/6285755495437', id)
             break
         case prefix+'gdrive':
             if(isReg(obj)) return
