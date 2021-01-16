@@ -207,7 +207,7 @@ after running it you need to scan the qr
 |       ✅        |   Listblock                     |
 |       ✅        |   Listbanned                    |
 |       ✅        |   Listgroup                     |
-|       ✅        |   Get Elaina Admin list         |
+|       ✅        |   Get ETZZ Admin list           |
 |       ✅        |   Get owner group               |
 |       ✅        |   Get group info                |
 |       ✅        |   enable or disable nsfw command|
@@ -236,8 +236,8 @@ after running it you need to scan the qr
 |       ✅        |   Getses                        |
 |       ✅        |   Banchat                       |
 |       ✅        |   Maintenance                   |
-|       ✅        |   Add Admin Elaina              |
-|       ✅        |   Del Admin Elaina              |
+|       ✅        |   Add Admin Etzz                |
+|       ✅        |   Del Admin Etzz                |
 |       ✅        |   Block                         |
 |       ✅        |   Unblock                       |
 |       ✅        |   Join Group                    |
