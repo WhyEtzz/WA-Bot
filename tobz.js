@@ -929,7 +929,7 @@ module.exports = tobz = async (tobz, message) => {
             tobz.reply(from, mess.wait, id)
             const lovemsg = body.slice(12)
             if (lovemsg.length > 10) return tobz.reply(from, '*Teks Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
-            await tobz.sendFileFromUrl(from, `https://api.vhtear.com/lovemessagetext?text=${lovemsg}&apikey=${vhtearkey}`, 'lovemsg.jpg', '', id)
+            await tobz.sendFileFromUrl(from, `http://docs-jojo.herokuapp.com/api/katacinta`, 'result', '', id)
             break
         case prefix+'romance':
             if(isReg(obj)) return
@@ -939,7 +939,7 @@ module.exports = tobz = async (tobz, message) => {
             tobz.reply(from, mess.wait, id)
             const rmnc = body.slice(9)
             if (rmnc.length > 10) return tobz.reply(from, '*Teks Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
-            await tobz.sendFileFromUrl(from, `https://api.vhtear.com/romancetext?text=${rmnc}&apikey=${vhtearkey}`, 'romance.jpg', '', id)
+            await tobz.sendFileFromUrl(from, `http://docs-jojo.herokuapp.com/api/twichquote`, 'result', '', id)
             break
         case prefix+'party':
             if(isReg(obj)) return
@@ -979,7 +979,7 @@ module.exports = tobz = async (tobz, message) => {
             tobz.reply(from, mess.wait, id)
             const thndr = body.slice(9)
             if (thndr.length > 10) return tobz.reply(from, '*Teks Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
-            await tobz.sendFileFromUrl(from, `https://api.vhtear.com/thundertext?text=${thndr}&apikey=${vhtearkey}`, 'thndr.jpg', '', id)
+            await tobz.sendFileFromUrl(from, `http://docs-jojo.herokuapp.com/api/thunder?text=${thndr}`, 'thndr.jpg', '', id)
             break
         case prefix+'pornhub':
             if(isReg(obj)) return
@@ -993,7 +993,7 @@ module.exports = tobz = async (tobz, message) => {
                 const lpornhub2 = argz[2]
                 if (lpornhub.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
                 if (lpornhub2.length > 10) return tobz.reply(from, '*Teks2 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
-                tobz.sendFileFromUrl(from, `https://api.vhtear.com/pornlogo?text1=${lpornhub}&text2=${lpornhub2}&apikey=${vhtearkey}`)
+                tobz.sendFileFromUrl(from, `http://docs-jojo.herokuapp.com/api/phblogo?text1=${lpornhub}&text2=${lpornhub2}`)
                 await limitAdd(serial)
             } else {
                 await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#pornhub [ |Teks1|Teks2 ]*, contoh *#pornhub |Tobz|Dev Etzz*`, id)
@@ -1011,7 +1011,7 @@ module.exports = tobz = async (tobz, message) => {
                 const glitch2 = argz[2]
                 if (glitch1.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
                 if (glitch2.length > 15) return tobz.reply(from, '*Teks2 Terlalu Panjang!*\n_Maksimal 15 huruf!_', id)
-                tobz.sendFileFromUrl(from, `https://api.vhtear.com/glitchtext?text1=${glitch1}&text2=${glitch2}&apikey=${vhtearkey}`)
+                tobz.sendFileFromUrl(from, `http://docs-jojo.herokuapp.com/api/ttlogo?text1=${glitch1}&text2=${glitch2}`)
                 await limitAdd(serial)
             } else {
                 await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#glitch [ |Teks1|Teks2 ]*, contoh *#glitch |Tobz|Dev Etzz*`, id)
