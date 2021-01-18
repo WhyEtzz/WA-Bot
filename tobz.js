@@ -2242,7 +2242,7 @@ ${desc}`)
             if (!isGroupMsg) return tobz.reply(from, 'Perintah ini hanya bisa di gunakan dalam group!', id)
             if (args.length === 1) return tobz.reply(from, 'Kirim perintah *#sspc [linkWeb]*\nContoh : *#sspc https://neonime.vip*', id)
             const sspc = body.slice(6)
-            tobz.sendFileFromUrl(from, `https://api.vhtear.com/ssweb?link=${sspc}&type=pc&apikey=${vhtearkey}`, 'sspc.jpg', '', id)
+            tobz.sendFileFromUrl(from, `https://api.apiflash.com/v1/urltoimage?access_key=0c630fb86b394348aaa65629409ea387&format=jpeg&no_cookie_banners=true&quality=100&response_type=image&url=${sspc}`, 'sspc.jpg', '', id)
             await limitAdd(serial)
             break
 	case prefix+'bitly':
