@@ -1011,7 +1011,7 @@ module.exports = tobz = async (tobz, message) => {
                 const glitch2 = argz[2]
                 if (glitch1.length > 10) return tobz.reply(from, '*Teks1 Terlalu Panjang!*\n_Maksimal 10 huruf!_', id)
                 if (glitch2.length > 15) return tobz.reply(from, '*Teks2 Terlalu Panjang!*\n_Maksimal 15 huruf!_', id)
-                tobz.sendFileFromUrl(from, `http://docs-jojo.herokuapp.com/api/ttlogo?text1=${glitch1}&text2=${glitch2}`)
+                tobz.sendFileFromUrl(from, `https://arugaz.my.id/api/textpro/glitchtext?text1=${glitch1}&text2=${glitch2}`)
                 await limitAdd(serial)
             } else {
                 await tobz.reply(from, `Wrong Format!\n[❗] Kirim perintah *#glitch [ |Teks1|Teks2 ]*, contoh *#glitch |Tobz|Dev Etzz*`, id)
