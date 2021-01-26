@@ -282,7 +282,7 @@ module.exports = tobz = async (tobz, message) => {
             if (obj === true){
                 return false
             } else {     
-                return tobz.reply(from, `Kamu belum terdaftar sebagai Teman Etzz\nuntuk mendaftar kirim ${prefix}daftar |nama|umur\n\ncontoh format: ${prefix}daftar |tobz|17\n\ncukup gunakan nama depan/panggilan saja`, id) //if user is not registered
+                return tobz.reply(from, `Kamu belum terdaftar sebagai Teman Etzz\nuntuk mendaftar kirim ${prefix}daftar |nama|umur\n\ncontoh format: ${prefix}daftar |Ichi|17\n\ncukup gunakan nama depan/panggilan saja`, id) //if user is not registered
             }
         }
 
@@ -1214,6 +1214,7 @@ ${desc}`)
         case prefix+'creator':
             tobz.sendContact(chatId, `6285755495437@c.us`)
             tobz.reply(from, 'Itu nomor Pacar ku, eh maksudnya Owner ku', id)
+             tobz.reply(from, 'Owner Bukan Bot', id)
             break
         case prefix+'resetsticker':
             if(isReg(obj)) return
@@ -1410,7 +1411,7 @@ ${desc}`)
                 tobz.reply(from, 'Simsimi berhasil di nonaktifkan di group ini!', id)
                 }
             } else {
-                tobz.reply(from, 'Pilih enable atau disable udin!', id)
+                tobz.reply(from, 'Pilih enable atau disable!', id)
             }
             break
         case prefix+'group':
@@ -2878,19 +2879,17 @@ ${desc}`)
             const twstalk = await slicedArgs.join(' ')
             console.log(twstalk)
             try {
-            const twstalk2 = await axios.get('http://melodicxt.herokuapp.com/api/twtprofile?user=' + twstalk + '&apiKey=' + melodickey)
+            const twstalk2 = await axios.get('http://arugaz.my.id/api/media/stalktwitt?user=' + twstalk)
             const { created_at, user } = twt.result[0]
 	    const twtz = `*「 TWITTER PROFILE 」*
 
-• *Username:* @${user.screen_name}
-• *Nama:* ${user.name}
-• *Deskripsi:* ${user.description}
-• *Pengikut:* ${user.followers_count}
-• *Mengikuti*: ${user.friends_count}
-• *Jumlah Favorite:* ${user.favourites_count}
-• *Jumlah Status:* ${user.statuses_count}
-• *Dibuat:* ${created_at}
-• *Link:* https://twitter.com/${user.screen_name}`
+${profile}
+• *Username:* @${username}
+• *Nama:* ${fullname}
+• *Deskripsi:* ${descText}
+• *Pengikut:* ${follower}
+• *Mengikuti*: ${following}
+• *Link:* https://twitter.com/${username}`
 
             const pictk = await bent("buffer")(user.profile_image_url)
             const base64 = `data:image/jpg;base64,${pictk.toString("base64")}`
@@ -2915,7 +2914,7 @@ ${desc}`)
             const istalk = await slicedArgs.join(' ')
             console.log(istalk)
             try {
-            const istalk2 = await axios.get('https://api.vhtear.com/igprofile?query=' + istalk + '&apikey=' + vhtearkey)
+            const istalk2 = await axios.get('https://arugaz.my.id/api/media/stalkig?user=' + istalk)
             const { username, biography, follow, follower, full_name, picture, post_count, is_private } = istalk2.result
 	    const istalk3 = `*「 INSTAGRAM PROFILE 」*
 
