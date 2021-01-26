@@ -1524,7 +1524,7 @@ ${desc}`)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
             if (args.length === 1) return tobz.reply(from, 'Kirim perintah *#pinterest [query]*\nContoh : *#pinterest Etzz*', id)
             const ptrsq = body.slice(11)
-            const ptrst = await fetch(`https://api.vhtear.com/pinterest?query=${ptrsq}&apikey=${vhtearkey}`)
+            const ptrst = await fetch(`http://api.fdci.se/sosmed/rep.php?gambar=${ptrsq}`)
             if (!ptrst.ok) throw new Error(`Error Pinterest : ${ptrst.statusText}`)
             const ptrs = await ptrst.json()
             const ptrsn = ptrs.result
