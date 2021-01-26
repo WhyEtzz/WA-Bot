@@ -2744,11 +2744,11 @@ ${desc}`)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
             if (args.length === 1) return tobz.reply(from, `Kirim perintah *#wiki [ Query ]*\nContoh : *#wiki asu*`, id)
             const queryz_ = body.slice(6)
-            const wiki = await axios.get(`https://api.vhtear.com/wikipedia?query=${queryz_}&apikey=${vhtearkey}`)
+            const wiki = await axios.get(`http://arugaz.my.id/api/edu/idwiki?query=${queryz_}`)
             if (wiki.data.error) {
                 tobz.reply(from, wiki.data.error, id)
             } else {
-                tobz.sendFileFromUrl(from, wiki.data.result.ImgResult, '', `*「 WIKI 」*\n\n➸ *Query* : ${queryz_}\n\n➸ *Result* : ${wiki.data.result.Info}`, id)
+                tobz.sendFileFromUrl(from, wiki.data.result.ImgResult, '', `*「 WIKI 」*\n\n➸ *Query* : ${queryz_}\n\n➸ *Result* : ${res.data.result}`, id)
                 await limitAdd(serial)
             }
         case prefix+'kbbi':
@@ -2758,12 +2758,12 @@ ${desc}`)
             if (isLimit(serial)) return tobz.reply(from, `Maaf ${pushname}, Kuota Limit Kamu Sudah Habis, Ketik ${prefix}limit Untuk Mengecek Kuota Limit Kamu`, id)
             if (args.length === 1) return tobz.reply(from, `Kirim perintah *#kbbi [ Query ]*\nContoh : *#kbbi asu*`, id)
             const kbbl = body.slice(6)
-            const kbbl2 = await axios.get(`https://api.vhtear.com/kbbi?query=${kbbl}&apikey=${vhtearkey}`)
+            const kbbl2 = await axios.get(`http://arugaz.my.id/api/edu/kbbi?query=${kbbl}`)
 
             if (kbbl2.data.error) {
                 tobz.reply(from, kbbl2.data.error, id)
             } else {
-                tobz.sendText(from, `*「 KBBI 」*\n\n➸ *Query* : ${kbbl}\n\n➸ *Result* : ${kbbl2.data.result.hasil}`, id)
+                tobz.sendText(from, `*「 KBBI 」*\n\n➸ *Query* : ${kbbl}\n\n➸ *Result* : ${arti}`, id)
                 await limitAdd(serial)
             }
             break
